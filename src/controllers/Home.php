@@ -20,6 +20,10 @@
             $this->checkLogin();
             $this->binance_api($page);
         }
+        public function account_info(){
+            $this->checkLogin();
+            $this->view("account_info", "Tài khoản", "account_info", []);
+        }
         public function errors(){
             $this->view("not_found","404 not found",[]);
         }
