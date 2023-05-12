@@ -1,5 +1,7 @@
-[link Demo tại đây]: https://quanlychitieuthanhcong.000webhostapp.com/Account/login
 # Quan_Ly_Chi_Tieu
 Web app quản lý chi tiêu
 <br>
-[link Demo tại đây]
+
+Port cho MySQL: 3307
+Copy vào folder htdocs của xampp và chạy Apache + MySQL
+Cần tạo trước database bằng cách chạy quan_ly_chi_tieu.sql trong phpMyAdmin
