@@ -26,7 +26,6 @@
                             '$token'
                         )";
                 mysqli_query($this->connection,$sql);
-                alert ("User created successfully");
                 return true;
             }
 

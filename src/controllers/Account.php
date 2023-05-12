@@ -9,7 +9,6 @@
             $this->view("login","","",[]);
         }
         public function register(){
-            echo "start to create account\n";
             $this->checkWasLogin();
             if (isset($_POST["name"]) == false || isset($_POST["email"]) == false ||isset($_POST["password"]) == false){
                 echo "failed to create";

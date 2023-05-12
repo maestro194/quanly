@@ -35,7 +35,6 @@ $(document).ready(function () {
             check = false;
         }
         if (check){
-            alert("ajax check");
             $.ajax({
                 type: "POST",
                 url: currentLocation,
