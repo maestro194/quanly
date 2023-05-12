@@ -3,7 +3,6 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th3 20, 2022 lúc 08:10 AM
 -- Phiên bản máy phục vụ: 5.7.33
 -- Phiên bản PHP: 7.4.19
 
@@ -41,18 +40,18 @@ CREATE TABLE `data_expense` (
 --
 
 INSERT INTO `data_expense` (`id_expense`, `id_user`, `title_expense`, `price_expense`, `description_expense`, `created_at_expense`) VALUES
-(3, 6, 'Gói hàng shoppe khá đẹp', 120000, 'hàng mua cho Hạnh', '2022-02-14'),
-(5, 6, 'Hàng tiki chuẩn quá', 120000, 'Chi là test chưa lưu\r\n', '2022-03-12'),
-(9, 6, 'Đi tam đảo', 122000, '', '2022-03-15'),
-(10, 6, 'đồ ăn tối', 10000, 'công \r\n', '2022-03-15'),
-(12, 6, 'Đồ ăn trưa', 20000, '', '2022-03-16'),
-(13, 6, 'đồ ăn tối', 35000, 'anh tối width frend\r\n', '2022-03-16'),
-(15, 6, 'Đồ ăn sáng', 20002, '', '2022-03-16'),
-(16, 6, 'Đồ đi chơi', 20000, '', '2022-03-16'),
-(17, 6, 'đi xe bus', 20000, '', '2022-03-16'),
-(20, 6, 'Ăn sáng', 20000, '', '2022-03-16'),
-(26, 6, 'Đi tam đảo ngắm mây', 200000, '', '2022-03-16'),
-(27, 6, 'đồ ăn tối', 200000, '', '2022-03-20');
+(3, 1, 'Gói hàng shoppe khá đẹp', 120000, 'hàng mua cho Hạnh', '2022-02-14'),
+(5, 1, 'Hàng tiki chuẩn quá', 120000, 'Chi là test chưa lưu\r\n', '2022-03-12'),
+(9, 1, 'Đi tam đảo', 122000, '', '2022-03-15'),
+(10, 1, 'đồ ăn tối', 10000, 'công \r\n', '2022-03-15'),
+(12, 1, 'Đồ ăn trưa', 20000, '', '2022-03-16'),
+(13, 1, 'đồ ăn tối', 35000, 'anh tối width frend\r\n', '2022-03-16'),
+(15, 1, 'Đồ ăn sáng', 20002, '', '2022-03-16'),
+(16, 1, 'Đồ đi chơi', 20000, '', '2022-03-16'),
+(17, 1, 'đi xe bus', 20000, '', '2022-03-16'),
+(20, 1, 'Ăn sáng', 20000, '', '2022-03-16'),
+(26, 1, 'Đi tam đảo ngắm mây', 200000, '', '2022-03-16'),
+(27, 1, 'đồ ăn tối', 200000, '', '2022-03-20');
 
 -- --------------------------------------------------------
 
@@ -74,11 +73,11 @@ CREATE TABLE `data_revenue` (
 --
 
 INSERT INTO `data_revenue` (`id_revenue`, `id_user`, `title_revenue`, `price_revenue`, `description_revenue`, `created_at_revenue`) VALUES
-(1, 6, 'đi phượt', 500000, 'test\n', '2022-03-16'),
-(2, 6, 'đi đòi nợ', 200000, '', '2022-03-16'),
-(3, 6, 'Đi tam đảo', 123123, '', '2022-03-16'),
-(9, 6, 'Cơ chế phân tầng', 20000, '', '2022-03-16'),
-(10, 6, 'Tiền lương hưu', 250000, '', '2022-03-20');
+(1, 1, 'đi phượt', 500000, 'test\n', '2022-03-16'),
+(2, 1, 'đi đòi nợ', 200000, '', '2022-03-16'),
+(3, 1, 'Đi tam đảo', 123123, '', '2022-03-16'),
+(9, 1, 'Cơ chế phân tầng', 20000, '', '2022-03-16'),
+(10, 1, 'Tiền lương hưu', 250000, '', '2022-03-20');
 
 -- --------------------------------------------------------
 
@@ -99,8 +98,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `token`) VALUES
-(6, 'cong pham', 'congphamtienthanh@gmail.com', '$2y$10$9tVJzRi9YAuNpN9ICFguHOApS4zPlKupMQ6sCk2a26q8B94zVO0l.', '57246e622e13e550365742b4b39237487e72e3971b54e8182fca'),
-(8, 'cong pham', 'congj2school@gmail.com', '$2y$10$zOlnCG3n07F45T/.F1Tjye8Iv84/8BnKfe8ExRUuSSJ29u1YVU..e', '18ce676c97725b6909f278ab7c700eda3a4be0812bd4a4775e5b');
+(1, 'Le Quang Dong', 'dong@test.com', '$2y$10$9tVJzRi9YAuNpN9ICFguHOApS4zPlKupMQ6sCk2a26q8B94zVO0l.', '57246e622e13e550365742b4b39237487e72e3971b54e8182fca'),
 
 --
 -- Chỉ mục cho các bảng đã đổ

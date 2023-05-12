@@ -116,10 +116,18 @@ $(document).ready(function () {
     })
 
     // Tìm kiếm theo ngày
-    $("#box-find-this-day").on('submit', function () {
+    $("#search").on('click', function () {
         event.preventDefault();
         waitForData();
         var date = $('#Day-picker').val();
+        requestData(hostName, date);
+    })
+
+    // Xóa tìm kiếm theo ngày
+    $("#dismiss").on('click', function() {
+        event.preventDefault();
+        waitForData();
+        var date = "";
         requestData(hostName, date);
     })
 });
