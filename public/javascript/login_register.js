@@ -25,7 +25,6 @@ $(document).ready(function () {
         "hideMethod": "fadeOut"
     }
     $('#form-register').submit(function () {
-        alert("submit event happened");
         let check = true;
         event.preventDefault();
         var currentLocation = window.location;
@@ -50,8 +49,6 @@ $(document).ready(function () {
                         toastr["success"]("Tạo tài khoản thành công", "Thành công");
                         document.getElementById('form-register').reset();
                         document.getElementById('flip').click();
-                    }else {
-                        toastr["error"]("Cant submit account", "Bugged");
                     }
                 },
                 error: function() {
