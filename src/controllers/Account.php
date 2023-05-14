@@ -11,7 +11,6 @@
         public function register(){
             $this->checkWasLogin();
             if (isset($_POST["name"]) == false || isset($_POST["email"]) == false ||isset($_POST["password"]) == false){
-                echo "failed to create";
                 die("-1");
             }
 
@@ -30,7 +29,7 @@
             if ($save->CreateUser($name,$email,$secure_pass)){
                 echo 1;
             }else{
-                echo "Fail to create";
+                echo 0;
             }
         }
         public function login_processing(){

@@ -149,3 +149,26 @@ function requestData(hostName, date){
         }
     });
 }
+
+function requestDataRange(hostName, sdate, edate) {
+    sdate = formatDate2(sdate);
+    edate = formatDate2(edate);
+
+    $.ajax({
+        type: "POST",
+        url: hostName,
+        data:{
+            "sdate": sdate,
+            "edate": edate
+        },
+        dataType: "json",
+        success: function (response) {
+            value_res = response;
+            if(value_res.length == 0) {
+                responseError()
+            } else {
+
+            }
+        }
+    });
+}

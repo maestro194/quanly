@@ -3,13 +3,10 @@
         function CreateUser($name,$email,$password){
             $sql = "SELECT COUNT(*) AS SL FROM `user` WHERE `email` = '$email'";
             $check = mysqli_query($this->connection,$sql);
-            
-            echo "Connect db for user\n";
 
             $check = mysqli_fetch_array($check);
 
             if($check['SL']>0){
-                alert($check['SL']);
                 return false;
             }else{
                 $token = bin2hex(random_bytes(26));

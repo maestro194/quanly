@@ -12,7 +12,8 @@
         <div class="container-choice-date">
             <p class="calender-fill-title">Lọc theo ngày</p>
             <form class="box" id="box-find-this-day">
-                <input type="text" class="datepicker-here form-control" id="Day-picker" data-date-format="dd/mm/yyyy" data-language='en' placeholder="Lựa chọn ngày">
+                <input type="text" class="datepicker-here form-control" id="Day-picker" data-date-format="dd/mm/yyyy" data-language='en' placeholder="Start date">
+                <input type="text" class="datepicker-here form-control" id="Day-picker" data-date-format="dd/mm/yyyy" data-language='en' placeholder="End date">
                 <button id="search">Chọn tìm kiếm</button>
                 <button id="dismiss">Hủy lọc tìm kiếm</button>
             </form>
